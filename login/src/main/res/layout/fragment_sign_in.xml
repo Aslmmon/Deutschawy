@@ -9,14 +9,15 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextInputLayoutStyle"
         android:hint="@string/email_title"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hr_guidline">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_email"
+            android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -25,15 +26,17 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextInputLayoutStyle"
         android:layout_marginTop="20sp"
         android:hint="@string/password_title"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/til_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_password"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -51,14 +54,25 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimary"
-        android:text="@string/sign_in_title"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        app:cornerRadius="20dp"
         android:layout_marginTop="20dp"
+        android:text="@string/sign_in_title"
+        android:id="@+id/btn_signIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_password" />
+        app:layout_constraintTop_toBottomOf="@id/til_password"
+        style="@style/buttonStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_title"
+        android:id="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_signIn"
+        style="@style/buttonStyle" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
