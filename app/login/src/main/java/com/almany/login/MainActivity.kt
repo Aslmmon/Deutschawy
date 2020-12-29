@@ -1,4 +1,4 @@
-package com.almany.deutschawy
+package com.almany.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

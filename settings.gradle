@@ -1,2 +1,6 @@
+include ':base_ui'
+include ':baseModule'
+include ':login'
+include ':coreApi'
 include ':app'
 rootProject.name = "Deutschawy"

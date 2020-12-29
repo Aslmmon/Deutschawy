@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D50000</color>
+    <color name="colorPrimaryVariant">#9B0000</color>
+    <color name="colorWhite">#fff</color>
+    <!-- Secondary brand color. -->
+    <color name="colorSecondary">#FF5131</color>
+
+    <!-- Status bar color. -->
+</resources>
